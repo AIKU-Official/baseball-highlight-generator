@@ -29,7 +29,7 @@ A100을 끊기지 않게 실행시킬 수 있는 컴퓨팅 단위를 준비해�
 
 1. [MLB-youtube](https://github.com/piergiaj/mlb-youtube) 데이터셋을 준비합니다.  
    본 프로젝트에서는 Continuous Video만을 필요로 하기 때문에 segment 데이터는 준비할 필요가 없습니다.
-2. 
+2. code 폴더에 있는 ipynb 폴더를 순서대로 실행시킵니다.  
 
 ## 예시 결과
 아래 썸네일을 클릭하면 원본 영상이 뜹니다.   
