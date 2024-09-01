@@ -1,4 +1,4 @@
-# 프로젝트명
+# 아이쿠 공식계정보다 야구 영상이 더 많은 팔로워 얻을거라고 증명하기
 
 📢 2024년 여름 [AIKU](https://github.com/AIKU-Official) 활동으로 진행한 프로젝트입니다.  
 🎉 2024년 1/여름/2/겨울학기 AIKU Conference 열심히상 수상!
@@ -10,7 +10,15 @@
 
 ## 방법론
 
-(문제를 정의하고 이를 해결한 방법을 가독성 있게 설명해주세요)
+[MLB-youtube](https://github.com/piergiaj/mlb-youtube) 데이터셋 중 continuous(여러 개의 action이 포함된 1~2분 길이의 야구 경기 영상) 데이터를 활용하여, 중요한 action을 추출하는 것을 목표로 하였습니다.
+데이터셋을 학습시키기 위해서 데이터 전처리는 다음과 같은 방식으로 진행합니다.
+
+1. 모든 continuous 영상을 1초 단위로 분할합니다.
+2. Action이 일어나는 구간을 True, 일어나지 않는 구간을 False로 설정한다.
+3. True:False 1:1 샘플링을 진행한다.
+
+모델은 EfficientNet-B0 모델을 베이스라인으로 Classification Head를 추가한 모델입니다.  
+ImageNet-1K 데이터셋으로 사전 학습된 모델을 fine-tuning 하는 방식으로 학습이 진행되며, 모델은 1초 단위로 잘린 영상이 하이라이트 구간에 속하는지 판별합니다.
 
 ## 환경 설정
 
@@ -19,8 +27,8 @@ A100을 끊기지 않게 실행시킬 수 있는 컴퓨팅 단위를 준비해�
 
 ## 사용 방법
 
-1. [MLB-youtube](https://github.com/piergiaj/mlb-youtube) 데이터셋을 준비합니다.
-   - 본 프로젝트에서는 Continuous Video만을 필요로 하기 때문에 segment 데이터는 준비할 필요가 없습니다.
+1. [MLB-youtube](https://github.com/piergiaj/mlb-youtube) 데이터셋을 준비합니다.  
+   본 프로젝트에서는 Continuous Video만을 필요로 하기 때문에 segment 데이터는 준비할 필요가 없습니다.
 2. 
 
 ## 예시 결과
