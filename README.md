@@ -1,7 +1,7 @@
 # 아이쿠 공식계정보다 야구 영상이 더 많은 팔로워 얻을거라고 증명하기
 
 📢 2024년 여름 [AIKU](https://github.com/AIKU-Official) 활동으로 진행한 프로젝트입니다.  
-🎉 2024년 1/여름/2/겨울학기 AIKU Conference 열심히상 수상!
+🎉 2024년 여름학기 AIKU Conference 우수상 수상!
 
 ## 소개
 
